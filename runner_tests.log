@@ -1,0 +1,16 @@
+2024-09-21 19:39:18,648 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\Дмитрий\PycharmProjects\main1\tests_12_4.py", line 18, in test_run
+    h2 = mod.Runner(1111, 5)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Дмитрий\PycharmProjects\main1\module_12_4.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-09-21 19:39:18,649 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\Дмитрий\PycharmProjects\main1\tests_12_4.py", line 10, in test_walk
+    h1 = mod.Runner('Tom', -3)
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Дмитрий\PycharmProjects\main1\module_12_4.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -3
